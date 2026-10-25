@@ -1,5 +1,5 @@
 name: ai_jr
-description: A local offline AI chat application built with Flutter.
+description: A local offline AI app using Qwen 2.5 and OBB.
 publish_to: 'none'
 version: 1.0.0+1
 
@@ -9,11 +9,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  path_provider: ^2.1.2
+  permission_handler: ^11.3.1
   shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
-
-  # مسار ملف النموذج المحلي عشان التطبيق يقراه وهو بيبني الـ APK
-  assets:
-    - assets/models/
