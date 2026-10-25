@@ -1,0 +1,19 @@
+name: ai_jr
+description: A local offline AI chat application built with Flutter.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+
+flutter:
+  uses-material-design: true
+
+  # مسار ملف النموذج المحلي عشان التطبيق يقراه وهو بيبني الـ APK
+  assets:
+    - assets/models/
